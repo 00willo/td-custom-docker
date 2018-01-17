@@ -41,3 +41,5 @@ RUN source /root/.bash_profile && pyenv activate td-py3.5.3
 RUN python -V
 RUN source /root/.bash_profile &&  python -V
 RUN echo $PATH
+RUN pip install spacy==2.0.3
+RUN yum remove -y gcc gcc++
